@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0f10">
+  <meta name="description" content="ARCHIREL — Architecture of Relations. 흩어진 것들 사이의 관계를 발견하고, 그 관계에 구조를 부여합니다.">
+  <title>ARCHIREL — Architecture of Relations</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#products">제품으로 바로 가기</a>
+  <header class="site-header">
+    <a class="wordmark" href="#intro" aria-label="ARCHIREL 처음으로">ARCHIREL</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="main-nav" aria-label="주요 메뉴">
+      <a class="light-nav" href="#products">Products</a><a class="light-nav" href="#projects">Projects</a>
+      <a href="#about">About</a><a class="dark-nav" href="#products">Work</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro dark-section" id="intro" aria-label="Intro">
+      <canvas id="intro-canvas" aria-hidden="true"></canvas>
+      <div class="intro-copy"><p>흩어진 것들 사이에<br>보이지 않는 관계가 있습니다.</p></div>
+      <a class="scroll-cue" href="#reveal"><span></span>Scroll</a>
+      <p class="section-index"><span>01</span> Intro</p>
+    </section>
+    <section class="reveal-hero dark-section" id="reveal" aria-labelledby="brand-title">
+      <canvas id="relation-canvas" aria-hidden="true"></canvas>
+      <div class="reveal-copy">
+        <h1 id="brand-title">ARCHIREL</h1>
+        <p class="brand-subtitle">Architecture of Relations.</p>
+        <p class="brand-description">흩어진 것들 사이의 관계를 발견하고,<br>그 관계에 구조를 부여합니다.</p>
+        <a class="outline-button" href="#overview">Enter <span aria-hidden="true">→</span></a>
+      </div>
+      <p class="section-index"><span>02</span> Reveal</p>
+    </section>
+    <section class="overview light-section" id="overview" aria-labelledby="overview-title">
+      <div class="overview-copy">
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2 id="overview-title">관계를 발견하고,<br>구조를 만듭니다.</h2>
+        <p class="body-copy">ARCHIREL은 흩어진 것들 사이의 관계를 발견하고,<br>그 관계에 구조를 부여하는 것을 지향합니다.<br>사람, 시간, 공간, 정보, 그리고 더 많은 것들 사이에서<br>새로운 가능성을 연결합니다.</p>
+        <a class="plain-link" href="#products">Our Works <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="overview-art" aria-hidden="true"><svg viewBox="325 403 438 330"><image href="assets/reference.png" width="1024" height="1536"/></svg></div>
+      <ol class="process">
+        <li><span class="process-number">01</span><div><small>01</small><h3>Discover</h3><p>관계를 발견합니다.</p></div></li>
+        <li><span class="process-number">02</span><div><small>02</small><h3>Structure</h3><p>구조를 만듭니다.</p></div></li>
+        <li><span class="process-number">03</span><div><small>03</small><h3>Create</h3><p>새로운 가능성을 만듭니다.</p></div></li>
+      </ol>
+      <p class="section-index"><span>03</span> Overview</p>
+    </section>
+    <section class="collection light-section" id="products" aria-labelledby="products-title">
+      <div class="collection-intro"><p class="eyebrow">PRODUCTS</p><h2 id="products-title">일상의 관계를<br>새로운 시선으로.</h2></div>
+      <div class="collection-content">
+        <a class="collection-all" href="#products-grid">See all products <span aria-hidden="true">→</span></a>
+        <div class="card-grid" id="products-grid">
+          <button class="work-card" type="button" data-project="albumtag" aria-haspopup="dialog">
+            <div class="card-image"><svg viewBox="242 798 230 102" role="img" aria-label="겹쳐 놓은 사진 프린트"><image href="assets/reference.png" width="1024" height="1536"/></svg></div>
+            <div class="card-body"><h3>AlbumTag</h3><p class="relation-label">Memory × Media</p><p class="card-description">사진과 기억의 관계를 다시 연결합니다.</p><span class="card-arrow" aria-hidden="true">→</span></div>
+          </button>
+          <button class="work-card" type="button" data-project="calendar" aria-haspopup="dialog">
+            <div class="card-image"><svg viewBox="493 798 229 102" role="img" aria-label="밝고 미니멀한 캘린더 콘셉트"><image href="assets/reference.png" width="1024" height="1536"/></svg></div>
+            <div class="card-body"><h3>Calendar-it</h3><p class="relation-label">Event × Time</p><p class="card-description">흩어진 일정을 하나의 흐름으로.</p><span class="card-arrow" aria-hidden="true">→</span></div>
+          </button>
+          <button class="work-card" type="button" data-project="asterism" aria-haspopup="dialog">
+            <div class="card-image"><svg viewBox="743 798 229 102" role="img" aria-label="별과 별 사이에 이어지는 지식의 연결"><image href="assets/reference.png" width="1024" height="1536"/></svg></div>
+            <div class="card-body"><h3>Asterism</h3><p class="relation-label">Knowledge × Knowledge</p><p class="card-description">지식이 다시 만나는 별자리를 만듭니다.</p><span class="card-arrow" aria-hidden="true">→</span></div>
+          </button>
+        </div>
+      </div>
+      <p class="section-index"><span>04</span> Products</p>
+    </section>
+    <section class="collection light-section" id="projects" aria-labelledby="projects-title">
+      <div class="collection-intro"><p class="eyebrow">PROJECTS</p><h2 id="projects-title">복잡한 시스템도<br>관계로 바라봅니다.</h2></div>
+      <div class="collection-content">
+        <a class="collection-all" href="#projects-grid">See all projects <span aria-hidden="true">→</span></a>
+        <div class="card-grid" id="projects-grid">
+          <button class="work-card" type="button" data-project="shipyard" aria-haspopup="dialog">
+            <div class="card-image"><svg viewBox="243 1082 229 103" role="img" aria-label="조선소와 건조 중인 선박의 항공 사진"><image href="assets/reference.png" width="1024" height="1536"/></svg></div>
+            <div class="card-body"><h3>Shipyard Scheduling</h3><p class="relation-label">Process × Space × Time</p><p class="card-description">조선소의 생산 흐름을 데이터로 설계합니다.</p><span class="card-arrow" aria-hidden="true">→</span></div>
+          </button>
+          <button class="work-card" type="button" data-project="weather" aria-haspopup="dialog">
+            <div class="card-image"><svg viewBox="493 1082 229 103" role="img" aria-label="구름 낀 하늘 아래 건설 현장"><image href="assets/reference.png" width="1024" height="1536"/></svg></div>
+            <div class="card-body"><h3>Construction Weather</h3><p class="relation-label">Process × Weather × Risk</p><p class="card-description">날씨와 공정을 연결해 더 안전한 현장을 만듭니다.</p><span class="card-arrow" aria-hidden="true">→</span></div>
+          </button>
+          <button class="work-card" type="button" data-project="more" aria-haspopup="dialog">
+            <div class="card-image"><svg viewBox="743 1082 229 103" aria-hidden="true"><image href="assets/reference.png" width="1024" height="1536"/></svg></div>
+            <div class="card-body"><h3>and more</h3><p class="relation-label">More Relations</p><p class="card-description">더 많은 관계를 탐험하고 있습니다.</p><span class="card-arrow" aria-hidden="true">→</span></div>
+          </button>
+        </div>
+      </div>
+      <p class="section-index"><span>05</span> Projects</p>
+    </section>
+    <section class="about dark-section" id="about" aria-labelledby="about-title">
+      <div class="about-title"><p class="eyebrow">ABOUT</p><h2 id="about-title">관계가 만드는<br>더 나은 세상을 위해.</h2></div>
+      <div class="about-copy"><p>ARCHIREL은 건축적 사고와 데이터, 소프트웨어를 통해<br>사람과 사람, 정보와 정보, 공간과 시간 사이의 관계를 설계합니다.<br>작은 도구에서 더 큰 시스템까지, 연결이 만드는 가능성을 탐험합니다.</p><button type="button" class="outline-button" data-project="about" aria-haspopup="dialog">More about us <span aria-hidden="true">→</span></button></div>
+      <div class="about-aside"><span>A more connected world.</span></div>
+      <p class="section-index"><span>06</span> About</p>
+      <a class="footer-wordmark" href="#intro">ARCHIREL</a>
+    </section>
+    <div class="contact" id="contact"><span>ARCHIREL · Architecture of Relations.</span><p>연락처는 준비 중입니다.</p><a href="#intro">Back to top ↑</a></div>
+  </main>
+  <dialog id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top"><span id="dialog-category" class="eyebrow"></span><button class="dialog-close" type="button" aria-label="프로젝트 소개 닫기">닫기 <span aria-hidden="true">×</span></button></div>
+    <div class="dialog-content"><p class="dialog-relation" id="dialog-relation"></p><h2 id="dialog-title"></h2><p class="dialog-summary" id="dialog-summary"></p><div class="dialog-status" id="dialog-status"></div><div id="dialog-sections"></div><p class="dialog-footnote">현재 로컬 시안입니다. 실제 서비스 주소와 결과물은 준비되는 대로 연결할 예정입니다.</p></div>
+  </dialog>
+  <noscript><p class="noscript-note">프로젝트 상세 소개는 JavaScript를 켜면 볼 수 있습니다.</p></noscript>
+</body>
+</html>
